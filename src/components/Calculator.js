@@ -5,8 +5,9 @@ class Calculator extends React.Component {
     super(props);
     this.state = {};
   }
+  
   render() {
-    return(
+    return (
       <div className="main">
         <div className="display">0</div>
         <div className="row">
@@ -39,7 +40,7 @@ class Calculator extends React.Component {
           <button type="button" className="btn ora">=</button>
         </div>
       </div>
-    )
+    );
   }
 }
 

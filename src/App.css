@@ -1,7 +1,7 @@
 * {
-padding: 0;
-margin: 0;
-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .container {
@@ -10,18 +10,19 @@ box-sizing: border-box;
 }
 
 .main {
-  display:flex;
+  display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   margin-top: 8rem;
-  border: 1px solid #D8D8D8;
+  border: 1px solid #d8d8d8;
   width: 450px;
 }
 
-.row, .last-row {
+.row,
+.last-row { 
   display: flex;
-  justify-content:space-between;
-  background-color: #D8D8D8;
+  justify-content: space-between;
+  background-color: #d8d8d8;
 }
 
 .display {
@@ -43,7 +44,7 @@ box-sizing: border-box;
 }
 
 .last-row > .btn:first-child {
-  width: 50.5%
+  width: 50.5%;
 }
 
 .keys {
@@ -51,5 +52,5 @@ box-sizing: border-box;
 }
 
 .ora {
-  background-color: #F5913E;
+  background-color: #f5913e;
 }
