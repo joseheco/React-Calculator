@@ -8,12 +8,12 @@ class App extends React.Component {
     this.state = {};
   }
 
-    render() {
-  return (
+  render() {
+    return (
     <div className="container">
       <Calculator />
     </div>
-  );
+    );
   }
 }
 
