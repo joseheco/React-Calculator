@@ -19,7 +19,7 @@
 }
 
 .row,
-.last-row { 
+.last-row {
   display: flex;
   justify-content: space-between;
   background-color: #d8d8d8;
