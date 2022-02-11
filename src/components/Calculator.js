@@ -3,23 +3,23 @@ import calculate from '../logic/calculate';
 
 const Calculator = () => {
   const objCal = {
-      total: null,
-      next: null,
-      operation: null,
-    };
+    total: null,
+    next: null,
+    operation: null,
+  };
 
-  const [objVal, setObjVal] = useState(objCal); 
+  const [objVal, setObjVal] = useState(objCal);
 
   const handleClick = (btnName) => {
     const btnVal = btnName.target.textContent;
     setObjVal(calculate(objVal, btnVal));
-  }
+  };
 
-  const valueOperation = ( { total, next, operation } ) => {
+  const valueOperation = ({ total, next, operation }) => {
     if (total === null && next === null && operation === null) return 0;
     const result = `${total || ''} ${operation || ''} ${next || ''}`;
     return result;
-  }
+  };
 
   return (
     <div className="main">
@@ -57,6 +57,6 @@ const Calculator = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Calculator;
