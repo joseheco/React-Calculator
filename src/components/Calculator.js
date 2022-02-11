@@ -1,5 +1,5 @@
 import React from 'react';
-import calculate from '../logic/calculate'
+import calculate from '../logic/calculate';
 
 class Calculator extends React.Component {
   constructor(props) {
@@ -16,12 +16,12 @@ class Calculator extends React.Component {
   handleClick(btnName) {
     const btnVal = btnName.target.textContent;
     this.setState((e) => calculate(e, btnVal));
-    }
+  }
 
   valueOperation() {
     const { total, next, operation } = this.state;
-    if ( total === null && next === null && operation === null) return 0;
-    const result =  `${total || ''} ${operation || ''} ${next || ''}`;
+    if (total === null && next === null && operation === null) return 0;
+    const result = `${total || ''} ${operation || ''} ${next || ''}`;
     return result;
   }
 
